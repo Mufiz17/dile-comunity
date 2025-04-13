@@ -24,7 +24,7 @@ def show_statistik(data):
     # 📌 Rata-rata jumlah orang per jam (semua hari)
     jumlah_per_jam = df.groupby('jam')['jumlah_orang'].sum().reset_index()
     jumlah_per_jam.columns = ['Jam', 'Banyak Orang Terdeteksi']
-    st.write(jumlah_per_jam)
+    st.write("### Total Deteksi per Jam")
     st.bar_chart(jumlah_per_jam.set_index('Jam'))
 
     # 📌 Tren harian (chart)
