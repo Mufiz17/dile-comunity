@@ -6,3 +6,4 @@ requests
 matplotlib
 streamlit-aggrid
 openrouteservice
+streamlit_option_menu
